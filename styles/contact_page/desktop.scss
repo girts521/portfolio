@@ -1,0 +1,45 @@
+@media screen and(min-width:1440px) {
+ main{
+
+    h1{
+        font-size: map-get($map: $desktop, $key: Lhead);
+        line-height: 62px;
+    }
+
+    .container{
+        @include flexCenter(column);
+
+        .form{
+            width: 60%;
+
+            p{
+                margin-top: 90px;
+            }
+
+            form{
+                @include flexCenter(row);
+                flex-wrap: wrap;
+
+                :nth-child(2){
+                    margin-left: 20px;
+                }
+
+                input{
+                    width: 48.5%;
+                    display: inline;
+                }
+            }
+        }
+
+        .contact-container{
+
+            .contact-heading {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+    }
+ }   
+
+
+}

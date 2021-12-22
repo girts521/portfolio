@@ -1,0 +1,16 @@
+@mixin flexCenter($direction: row){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin background-image-dark($imgUrls){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url($imgUrls);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@function weight($weightName){
+    @return map-get($font-weights, $weightName);
+}

@@ -1,0 +1,36 @@
+$font-weights: (
+    "small": 300,
+    "regular": 400,
+    "bold": 500
+);
+
+$mobile: (
+    "lineHeightH": 55px,
+    "lineHeightP": 21px,
+    "navBar": 18px,
+    "btn": 12px,
+    "navIcons": 16px,
+    "Lhead": 42px,
+    "head": 24px,
+    "Shead": 20px,
+    "p": 16px,
+    "Sp": 14px,
+    "underImg": 18px
+);
+
+$tablet: (
+    "lineHeightH": 63px,
+    "lineHeightP": 24px,
+    "Lhead": 48px,
+    "head": 28px,
+    "p": 18px
+);
+
+$desktop: (
+    "lineHeightH": 70px,
+    "lineHeightP": 24px,
+    "Lhead": 53px,
+    "head": 36px
+);
+
+$imgUrl: "../images/header-image.png"

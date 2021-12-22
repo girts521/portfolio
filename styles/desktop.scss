@@ -1,0 +1,89 @@
+@media screen and(min-width:1440px) {
+
+    header {
+
+        .heading-container {
+            max-width: 542px;
+            margin-left: 150px;
+
+            .heading {
+                font-size: map-get($desktop, "Lhead");
+                // margin-left: 150px;
+                line-height: 70px;
+                text-align: left;
+                font-weight: 500;
+            }
+
+            .heading-text {
+                // max-width: 50%;
+                // margin-left: 150px;
+            }
+
+            .heading-button {
+                // margin-left: 150px;
+            }
+        }
+    }
+
+    .wrapper{
+        margin-top: -70px;
+    }
+
+    main {
+
+
+        .main-text {
+            @include flexCenter(row);
+            margin: auto;
+            margin-bottom: 90px;
+            padding-top: 30px;
+            max-width: 70%;
+
+            .main-photo {
+                display: block;
+                margin-right: 95px;
+            }
+
+            .main-heading {
+                margin-bottom: 30px;
+                font-size: map-get($desktop, "head");
+                font-weight: 400;
+                line-height: 48px;
+            }
+
+            .main-p{
+                line-height: 20px;
+                text-align: left;
+            }
+        }
+
+        .skills-container {
+
+            .skills-heading {
+                font-size: map-get($desktop, "head");
+                margin-bottom: 40px;
+            }
+        }
+
+        .projects-container {
+
+            .projects-heading {
+                font-size: map-get($desktop, "head");
+               margin-bottom: 40px;
+            }
+
+            .project-box {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .contact-container{
+            
+            .contact-heading {
+                font-size: map-get($desktop, "head");
+            }
+        }
+
+
+    }
+}

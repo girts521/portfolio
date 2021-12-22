@@ -1,0 +1,91 @@
+@import "./includes/mixins";
+@import "./includes/variables";
+
+@media screen and(min-width:768px) {
+
+    header {
+
+        .heading-container {
+            text-align: left;
+            align-items: flex-start;
+
+            .heading {
+                font-size: map-get($tablet, "Lhead");
+            }
+
+            .heading-text {
+                font-size: map-get($tablet, "p");
+                line-height: map-get($tablet, "lineHeightP");
+            }
+        }
+    }
+
+    main {
+
+        padding-top: 60px;
+
+        .main-text {
+
+            margin-bottom: 60px;
+
+            .main-heading {
+                font-size: map-get($tablet, "head");
+                margin-bottom:30px ;
+            }
+
+            .main-p {
+                font-size: map-get($tablet, "p");
+                line-height: map-get($tablet, "lineHeightP");
+            }
+        }
+
+        .skills-container {
+            margin-bottom: 90px;
+
+            .skills-heading {
+                font-size: map-get($tablet, "head");
+                margin-bottom: 30px;
+            }
+
+            .skills-box {
+                @include flexCenter();
+
+                .skill-subheading {
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                .skill {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .projects-container {
+
+            .projects-heading{
+                margin-bottom: 30px;
+                font-size: 28px;
+                line-height: 33px;
+            }
+
+            .project-box {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+        }
+
+        .contact-container{
+
+            .contact-heading {
+                margin-top: 60px;
+                font-size: map-get($tablet, "head");
+            }
+        }
+    }
+
+
+}

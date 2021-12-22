@@ -1,0 +1,238 @@
+@import "./includes/mixins";
+@import "./includes/variables";
+@import "./parts/nav.scss";
+
+
+// TODO:
+//Putr in a container 
+//container background set to E5E5E5
+// use z-index and position instead of white container
+
+
+
+body {
+    font-family: Roboto;
+}
+
+// Top of the page. Nav included as partial
+
+header {
+    height: 660px;
+    @include background-image-dark($imgUrl);
+    position: relative;
+    
+    .heading-container {
+        text-align: center;
+        height: 100%;
+        @include flexCenter(column);
+        color: white;
+        margin-left: 24px;
+        margin-right: 24px;
+        position: relative;
+
+        .heading {
+            font-weight: weight("bold");
+            font-size: map-get($mobile, "Lhead" );
+            line-height: map-get($mobile, "lineHeightH");
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .heading-text {
+            font-size: map-get($mobile, "p" );
+            font-weight: weight("regular");
+            line-height: map-get($mobile, "lineHeightP");
+        }
+
+        .heading-button {
+            background-color: red;
+            height: 54px;
+            width: 171px;
+            @include flexCenter();
+            border-radius: 5px;
+            margin-top: 40px;
+
+            img {
+                margin-right: 5px;
+            }
+        }
+
+        .white-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .white{
+                background-color: white;
+                width: 90vw;
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+    }
+}
+
+// Main part of the page. Differs in each page.
+
+.wrapper{
+    background-color: #E5E5E5;
+    margin-top: -50px;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
+
+    .main-text {
+
+        text-align: center;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 50px;
+
+        .main-photo {
+            display: none;
+        }
+
+        .main-heading {
+            font-size: map-get($mobile, "head");
+            font-weight: weight(regular);
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+
+        .main-p {
+            font-size: map-get($mobile, "p");
+            line-height: map-get($mobile, "lineHeightP");
+            font-weight: weight("small");
+            color: #999999;
+            text-align: center;
+        }
+    }
+
+    .skills-container {
+        text-align: center;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 60px;
+
+        .skills-heading {
+            font-size: map-get($mobile, "head");
+            font-weight: weight("regular");
+            margin-bottom: 20px;
+        }
+
+        .skills-box {
+
+            :not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            .skill {
+
+
+                .skill-img {
+                    margin-bottom: 30px;
+                }
+
+                .skill-subheading {
+                    font-size:map-get($mobile, "Shead");
+                    font-weight: weight(bold);
+                }
+
+                .skill-text {
+                    font-size: map-get($mobile, "Sp");
+                    font-weight: weight(small);
+                    line-height: 16px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+
+    .projects-container {
+
+        @include flexCenter(column);
+        margin-left: 12px;
+        margin-right: 12px;
+
+        .projects-heading {
+            font-size: map-get($mobile, "head");
+            font-weight: weight("regular");
+            margin-bottom: 20px;
+        }
+
+        .project-box {
+
+            .project {
+
+                .project-img {
+                    
+                        margin-bottom: 11px;
+                        width: 100%;
+                    
+                }
+
+                .project-name {
+                    font-weight: weight("bold");
+                    font-size: map-get($mobile, "Shead");
+                }
+            }
+
+            :not(:last-child) {
+                margin-bottom: 22px;
+            }
+        }
+    }
+
+    .contact-container {
+        @include flexCenter(column);
+
+        .contact-heading {
+            font-size: map-get($mobile, "head");
+            font-weight: weight("regular");
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        .contact-icons {
+            margin-bottom: 40px;
+        }
+
+        .contact-button {
+            width: 148px;
+            height: 41px;
+            background-color: #9C27B0;
+            color: white;
+            @include flexCenter();
+            border-radius: 5px;
+            box-shadow: 3px 7px 13px -3px rgba(0, 0, 0, 0.72);
+            margin-bottom: 50px;
+
+            a{
+                color: white;
+                padding: 15px 37px;
+            }
+        }
+    }
+}
+
+// The footer of the page. Included in every page.
+@import "./parts/footer.scss";
+
+// Tabled and pc views 
+@import "./tablet.scss";
+@import "./desktop.scss"
