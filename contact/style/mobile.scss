@@ -1,12 +1,10 @@
-@import "../includes/mixins";
-@import "../includes/variables";
-@import "../parts/nav.scss";
+@import "../../includes/mixins";
+@import "../../includes/variables";
+@import "../../parts/nav.scss";
 
 
 // TO DO::
 
-// * CONTACTS PAGE NAV DARBU SARAKSTS - MAKE A LINK DIRECTING TO PORTFOLIO
-// * MAKE SURE THE NAV LINKS DIRECT WHERE NEEDED, THATS JUST LINKS AFTEER PUBLISH
 // * MAKE PORTFOLIO PAGE - MANI DARBI A NICE LINK MAYBE WITH ANIMATION
 
 //ADD ALL METATAGS
@@ -151,4 +149,4 @@ main {
 
 
 // The footer of the page. Included in every page.
-@import "../parts/footer.scss";
+@import "../../parts/footer.scss";

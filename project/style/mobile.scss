@@ -1,6 +1,6 @@
-@import "../includes/mixins";
-@import "../includes/variables";
-@import "../parts/nav.scss";
+@import "../../includes/mixins";
+@import "../../includes/variables";
+@import "../../parts/nav.scss";
 
 
 body {
@@ -119,7 +119,7 @@ header {
     }
 
     // The footer of the page. Included in every page.
-    @import "../parts/footer.scss";
+    @import "../../parts/footer.scss";
 
     footer{
         margin-top: 30px;
