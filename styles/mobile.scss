@@ -1,17 +1,13 @@
-@import "./includes/mixins";
-@import "./includes/variables";
-@import "./parts/nav.scss";
-
-
-// TODO:
-//Putr in a container 
-//container background set to E5E5E5
-// use z-index and position instead of white container
-
-
+@import "../includes/mixins";
+@import "../includes/variables";
+@import "../parts/nav.scss";
 
 body {
     font-family: Roboto;
+}
+
+#projectList:hover{
+    cursor: pointer;
 }
 
 // Top of the page. Nav included as partial
@@ -51,6 +47,7 @@ header {
             @include flexCenter();
             border-radius: 5px;
             margin-top: 40px;
+            cursor: pointer;
 
             img {
                 margin-right: 5px;
@@ -231,7 +228,7 @@ main {
 }
 
 // The footer of the page. Included in every page.
-@import "./parts/footer.scss";
+@import "../parts/footer.scss";
 
 // Tabled and pc views 
 @import "./tablet.scss";

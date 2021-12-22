@@ -80,6 +80,9 @@ nav {
 body {
   font-family: Roboto; }
 
+#projectList:hover {
+  cursor: pointer; }
+
 header {
   height: 660px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../images/header-image.png");
@@ -116,7 +119,8 @@ header {
       align-items: center;
       flex-direction: row;
       border-radius: 5px;
-      margin-top: 40px; }
+      margin-top: 40px;
+      cursor: pointer; }
       header .heading-container .heading-button img {
         margin-right: 5px; }
     header .heading-container .white-container {
