@@ -60,7 +60,7 @@ btn.addEventListener('click', (event) => {
     }
     console.log(data)
 
-axios.post('http://3.64.61.82:5000/data', {data})
+axios.post('https://3.64.61.82:5000/data', {data})
 // axios.post('http://localhost:5000/data', {data})
 .then(res => {
     console.log(res.data.msg)
