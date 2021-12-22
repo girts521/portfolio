@@ -32,7 +32,9 @@ window.addEventListener('resize', () => {
     if (window.innerWidth < 768) {
         navLinks.setAttribute('id', 'navLinks')
     } else {
-        navLinks.removeAttribute('id', 'navLinks')
+        navLinks.removeAttribute('id', 'navLinks');
+                navLinks.removeAttribute('style');
+        nav.removeAttribute('style');
     }
 })
 

@@ -25,7 +25,7 @@
     <meta property="twitter:description" content="This is my awesome portfolio.">
     <meta property="twitter:image"
         content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-<!-- meta tags -->
+    <!-- meta tags -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -241,43 +241,19 @@
     </div>
 
     <script src="./js/app.js" type="text/javascript"></script>
+
     <script>
         const projectList = document.querySelector("#projectList");
         const projectHeading = document.querySelector(".projects-heading");
         const headingBtn = document.querySelector(".heading-button");
 
-        // console.log(projectList.scrollTop)
-
-        console.log(projectHeading)
-
         projectList.addEventListener("click", () => {
-            console.log("clicked")
             projectHeading.scrollIntoView()
         })
 
         headingBtn.addEventListener("click", () => {
-            console.log("clicked")
             projectHeading.scrollIntoView()
         })
-
-
-
-
-
-
-        // projectList.addEventListener("click", () =>{
-        //     if (window.innerWidth <= 425){
-        //         console.log("mobile");
-        //     }
-        //     if (window.innerWidth > 425 && window.innerWidth <= 768){
-        //         console.log("tablet");
-        //     }
-        //     if (window.innerWidth > 768 && window.innerWidth){
-
-        //     }
-        // })
-
-
     </script>
 </body>
 

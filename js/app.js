@@ -28,7 +28,7 @@ window.addEventListener('resize', () => {
     } else {
         navLinks.removeAttribute('id', 'navLinks');
         navLinks.removeAttribute('style');
-        nav.removeAttribute('style')
+        nav.removeAttribute('style');
     }
 })
 
