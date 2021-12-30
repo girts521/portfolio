@@ -138,6 +138,18 @@ main {
             }
         }
     }
+
+    .popUp{
+        display: none;
+        width: 800px;
+        height: 500px;
+        position: absolute;
+        top: 20%;
+        left: 23%;
+        background-color: red;
+        color: #000000;
+        border: 2px solid black
+    }
 }
 
 

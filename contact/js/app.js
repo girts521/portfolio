@@ -6,6 +6,7 @@ const btn = document.querySelector('#btn');
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const text = document.querySelector('#text');
+const popUp = document.querySelector('.popUp');
 
 //nav functionality
 
@@ -64,9 +65,19 @@ axios.post('https://gkarcevskis-homework-api.herokuapp.com/data', {data})
 // axios.post('http://localhost:5000/data', {data})
 .then(res => {
     console.log(res.data.msg)
+    showPopUp()
+    setTimeout(() => {hidePopUp(), console.log('hide')}, 3000);
 })
 .catch(e => {
     console.log(e)
 })
 
 })
+
+const showPopUp = () => {
+    popUp.setAttribute('style', 'display: block;')
+}
+
+const hidePopUp = () => {
+    popUp.removeAttribute('style', 'display: block;')
+}
