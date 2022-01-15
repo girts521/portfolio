@@ -7,6 +7,8 @@ const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const text = document.querySelector('#text');
 const popUp = document.querySelector('.popUp');
+const popUpText = document.querySelector('.popUpText')
+const close = document.querySelector('.close');
 
 //nav functionality
 
@@ -54,6 +56,7 @@ burger.addEventListener('click', () => {
 btn.addEventListener('click', (event) => {
     console.log('click')
     event.preventDefault()
+
     const data = {
        name: name.value,
        email: email.value, 
@@ -61,23 +64,76 @@ btn.addEventListener('click', (event) => {
     }
     console.log(data)
 
+    let config = {
+        headers: {
+            withCredentials: true,
+        }
+      }
+
+      //check if input is valid and then send
+
 axios.post('https://gkarcevskis-homework-api.herokuapp.com/data', {data})
 // axios.post('http://localhost:5000/data', {data})
 .then(res => {
     console.log(res.data.msg)
+    console.log(res.data.sent)
+    if(res.data.sent === true){
     showPopUp()
-    setTimeout(() => {hidePopUp(), console.log('hide')}, 3000);
+    }else{
+        console.log('nop')
+        errorPopUp()
+    }
 })
 .catch(e => {
     console.log(e)
+    errorPopUp('Ooops an error! Try again later...')
 })
 
 })
+
+const errorPopUp = (text) => {
+    if(text === undefined){
+        popUpText.innerHTML = "<p> You have already sent me an email, please wait for me to contact you. Or please check your email, maybe I already have replied to you. Thanks <p/>"
+    }else{
+        popUpText.innerHTML = text;
+    }
+    popUp.setAttribute('style', 'display: block;')
+    resetInput()
+    setTimeout(() => {hidePopUp()}, 4000);
+}
 
 const showPopUp = () => {
+    popUpText.innerHTML = "<p>I received your data, thanks. I will contact you via the email you provided. You can see JSON output here: <a href='https://gkarcevskis-homework-api.herokuapp.com/data'>https://gkarcevskis-homework-api.herokuapp.com/data</a> </p>"
     popUp.setAttribute('style', 'display: block;')
+    resetInput()
+    setTimeout(() => {hidePopUp()}, 4000);
 }
 
 const hidePopUp = () => {
-    popUp.removeAttribute('style', 'display: block;')
+    if(popUp.hasAttribute('style')){
+        popUp.removeAttribute('style', 'display: block;')
+        console.log('hide')
+    }
 }
+
+const resetInput = () => {
+    name.value = ''
+    email.value = ''
+    text.value = ''
+}
+
+close.addEventListener('click', () => {
+    console.log('click')
+    popUp.removeAttribute('style', 'display: block;')
+})
+
+
+
+
+
+
+
+
+
+
+

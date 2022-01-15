@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,16 +16,14 @@
     <meta property="og:url" content="https://gkarcevskis.com">
     <meta property="og:title" content="Contact">
     <meta property="og:description" content="This is a contact page.">
-    <meta property="og:image"
-        content="">
+    <meta property="og:image" content="">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://gkarcevskis.com">
     <meta property="twitter:title" content="Contact">
     <meta property="twitter:description" content="This is a contact page.">
-    <meta property="twitter:image"
-        content="">
+    <meta property="twitter:image" content="">
     <!-- meta tags -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +36,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Kontakti</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -59,7 +59,8 @@
 
                 <div class="icons">
 
-                    <a href="https://www.facebook.com/girts.karcevskis/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/girts.karcevskis/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
                     <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://github.com/girts521" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
@@ -74,39 +75,51 @@
         <h1>Kontakti</h1>
 
         <div class="container">
+
+            <div class="popUp">
+                <div class="close">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="popUpText">
+                    <p>I received your data, thanks. I will contact you via the email you provided. 
+                        You can see JSON output here:
+                       <a href="https://gkarcevskis-homework-api.herokuapp.com/data">https://gkarcevskis-homework-api.herokuapp.com/data</a> </p>
+                </div>
+            </div>
+
             <div class="form">
                 <p>
-                    Pellentesque eu tellus eros. Nam ut turpis libero. Morbi tempor pellentesque commodo. Sed vel consequat leo. Vivamus felis erat, commodo vel tempor ac, auctor et justo. Donec risus nisi, dapibus a ullamcorper in, faucibus vulputate sapien.
+                    Pellentesque eu tellus eros. Nam ut turpis libero. Morbi tempor pellentesque commodo. Sed vel
+                    consequat leo. Vivamus felis erat, commodo vel tempor ac, auctor et justo. Donec risus nisi, dapibus
+                    a ullamcorper in, faucibus vulputate sapien.
                 </p>
 
-                <form action="http://localhost:3001/data" method="POST">
-                    <input type="name" name="name" id="name" placeholder="Tavs vārds">
-                    <input type="name" name="email" id="email" placeholder="Tavs epasts">
-                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Tavs epasts"></textarea>
-                     
-                    <button id="btn" class="btn">APSKATĪT</button>
+                <form>
+                    <input type="name" name="name" id="name" placeholder="Tavs vārds" required>
+                    <input type="email" name="email" id="email" placeholder="Tavs epasts"  required>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Tavs jautājums" required></textarea>
+
+                    <button id="btn" class="btn">Sūtīt</button>
                 </form>
             </div>
 
             <div class="contact-container">
 
                 <h2 class="contact-heading">Sazinies ar mani!</h2>
-    
+
                 <div class="contact-icons">
-                    <a href="https://www.facebook.com/girts.karcevskis/" target="_blank"><img src="../icons/facebook.png" alt="" class="contact-img"></a>
+                    <a href="https://www.facebook.com/girts.karcevskis/" target="_blank"><img
+                            src="../icons/facebook.png" alt="" class="contact-img"></a>
                     <a href=""><img src="../icons/twitter.png" alt="" class="contact-img"></a>
                     <a href=""><img src="../icons/linkedin-in.png" alt="" class="contact-img"></a>
                     <a href=""><img src="../icons/instagram.png" alt="" class="contact-img"></a>
-                    <a href="https://github.com/girts521" target="_blank"><img src="../icons/github.png" alt="" class="contact-img"></a>
+                    <a href="https://github.com/girts521" target="_blank"><img src="../icons/github.png" alt=""
+                            class="contact-img"></a>
                 </div>
             </div>
         </div>
 
-        <div class="popUp">
-            <div class="popUpText">
-                <p>I received your data, thanks. You can see JSON output here: https://gkarcevskis-homework-api.herokuapp.com/data</p>
-            </div>
-        </div>
 
         <footer>
             <div class="footer-links">
@@ -116,15 +129,16 @@
                     <li><a href="">Mans CV</a></li>
                 </ul>
             </div>
-    
+
             <div class="copyright">
                 (c) 2021, Powered by WebSkola
             </div>
-    
+
         </footer>
 
     </main>
 
     <script src="./js/app.js" type="text/javascript"></script>
 </body>
+
 </html>
