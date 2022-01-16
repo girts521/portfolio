@@ -1,1 +1,1 @@
-# final_css
+# Girts Karcevskis portfolio page
