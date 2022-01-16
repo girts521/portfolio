@@ -72,7 +72,7 @@ btn.addEventListener('click', (event) => {
 
       //check if input is valid and then send
 
-axios.post('https://gkarcevskis-portfolio-api.herokuapp.com/data', {data})
+axios.post('https://gkarcevskis-portfolio-api.herokuapp.com/data', {data, headers})
 // axios.post('http://localhost:5000/data', {data})
 .then(res => {
     console.log(res.data.msg)
