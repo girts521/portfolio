@@ -1,20 +1,9 @@
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: rgba(5, 3, 3, 0.4);
   position: fixed;
   z-index: 4;
@@ -22,60 +11,44 @@ nav {
   height: 62px;
   width: 100%;
 }
-
 nav a {
   color: white;
 }
-
 nav .name {
   cursor: pointer;
 }
-
 nav .name a {
   color: white;
   margin-left: 35px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 nav .burger {
   height: 20px;
   width: 25px;
   margin-right: 35px;
   cursor: pointer;
 }
-
 @media screen and (min-width: 768px) {
   nav .burger {
     display: none;
   }
 }
-
 nav .nav-links {
   display: none;
 }
-
 nav .nav-links .icons a {
   padding: 10px;
 }
-
 nav .nav-links #projectList, nav .nav-links #cv {
   padding-left: 15px;
 }
-
 @media screen and (min-width: 768px) {
   nav .nav-links {
     color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
     margin-right: 36px;
     font-size: 12px;
     font-weight: 400;
@@ -92,7 +65,6 @@ nav .nav-links #projectList, nav .nav-links #cv {
     padding-bottom: 15px;
   }
 }
-
 nav #navLinks {
   position: absolute;
   right: 0;
@@ -103,23 +75,16 @@ nav #navLinks {
   color: white;
   display: none;
 }
-
 nav #navLinks div {
   cursor: pointer;
   padding-top: 25px;
   color: white;
 }
-
 nav .icons {
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          /* justify-content: space-between; */
+  justify-content: space-between;
 }
-
 @media screen and (min-width: 768px) {
   nav .icons {
     margin: 0;
@@ -133,14 +98,12 @@ nav .icons {
     padding-right: 150px;
   }
 }
-
 body {
   font-family: Roboto;
 }
 
 header {
   height: 380px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../../images/page-header.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../images/page-header.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,23 +114,12 @@ header {
 .wrapper {
   background-color: #E5E5E5;
 }
-
 .wrapper main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .wrapper main .container {
   position: relative;
   margin-top: -50px;
@@ -175,10 +127,8 @@ header {
   background-color: white;
   width: 90vw;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
-          box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
+  box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
 }
-
 .wrapper main .container h1 {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -187,37 +137,24 @@ header {
   font-size: 24px;
   line-height: 28px;
 }
-
 @media screen and (min-width: 768px) {
   .wrapper main .container h1 {
     font-size: 36px;
     line-height: 48px;
   }
 }
-
 .wrapper main .container .project {
   margin-left: 12px;
   margin-right: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .wrapper main .container .project img {
   margin-bottom: 40px;
   width: 70%;
 }
-
 .wrapper main .container .project p {
   font-size: 16px;
   line-height: 19px;
@@ -226,28 +163,17 @@ header {
   margin-bottom: 20px;
   color: #999999;
 }
-
 @media screen and (min-width: 768px) {
   .wrapper main .container .project p {
     font-size: 18px;
     line-height: 21px;
   }
 }
-
 .wrapper main .container .project .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   background-color: #9C27B0;
   font-size: 12px;
   line-height: 14px;
@@ -256,36 +182,22 @@ header {
   height: 41px;
   border-radius: 5px;
   margin-bottom: 50px;
-  -webkit-box-shadow: 3px 5px 18px -5px #000000;
-          box-shadow: 3px 5px 18px -5px #000000;
+  box-shadow: 3px 5px 18px -5px #000000;
 }
-
 .wrapper main .container .project .btn a {
   color: white;
   padding: 10px 40px;
 }
-
 .wrapper main .container .tech-stack {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   margin-bottom: 40px;
 }
-
 .wrapper main .container .tech-stack :not(:last-child) {
   margin-right: 6px;
 }
-
 .wrapper main .container .tech-stack .tech {
   background-color: #9C27B0;
   color: white;
@@ -295,47 +207,26 @@ header {
   border-radius: 15px;
   padding: 5px 11px;
 }
-
 .wrapper footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 55%;
   margin: auto;
 }
-
 .wrapper footer .footer-links {
   width: 100%;
   margin-bottom: 20px;
 }
-
 .wrapper footer .footer-links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .wrapper footer .footer-links ul li {
   display: inline;
 }
-
 .wrapper footer .footer-links ul li a {
   text-decoration: none;
   color: #3C4858;
@@ -344,35 +235,26 @@ header {
   text-transform: uppercase;
   padding: 10px;
 }
-
 .wrapper footer .copyright {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 768px) {
   .wrapper footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     width: 80vw;
   }
   .wrapper footer .footer-links {
     max-width: 40%;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .wrapper footer .footer-links {
     max-width: 30%;
   }
 }
-
 .wrapper footer {
   margin-top: 30px;
 }
@@ -398,4 +280,3 @@ header {
     margin-bottom: 90px;
   }
 }
-/*# sourceMappingURL=mobile.css.map */

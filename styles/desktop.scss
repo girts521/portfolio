@@ -1,3 +1,5 @@
+@import "../includes/mixins";
+@import "../includes/variables";
 @media screen and(min-width:1440px) {
 
     header {
@@ -42,6 +44,7 @@
             .main-photo {
                 display: block;
                 margin-right: 95px;
+                width: 37%;
             }
 
             .main-heading {

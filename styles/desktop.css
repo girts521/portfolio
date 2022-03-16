@@ -1,0 +1,65 @@
+@media screen and (min-width: 1440px) {
+  header .heading-container {
+    max-width: 542px;
+    margin-left: 150px;
+  }
+  header .heading-container .heading {
+    font-size: 53px;
+    line-height: 70px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .wrapper {
+    margin-top: -70px;
+  }
+  main .main-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    margin-bottom: 90px;
+    padding-top: 30px;
+    max-width: 70%;
+  }
+  main .main-text .main-photo {
+    display: block;
+    margin-right: 95px;
+    width: 37%;
+  }
+  main .main-text .main-heading {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+  }
+  main .main-text .main-p {
+    line-height: 20px;
+    text-align: left;
+  }
+  main .skills-container .skills-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  main .projects-container .projects-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  main .projects-container .project-box {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  main .contact-container .contact-heading {
+    font-size: 36px;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */
